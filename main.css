@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('./midias/Fundo\ mesa\ escritorio.png');
+    background-size: cover; /* Isso faz com que a imagem cubra todo o fundo */
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color: #F8F8FF;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    max-width: 640px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, button {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0px;
+}
