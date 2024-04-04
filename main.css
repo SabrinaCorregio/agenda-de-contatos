@@ -33,6 +33,20 @@ label {
     margin-bottom: 5px;
 }
 
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50px;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
 input, button {
     padding: 5px;
     margin-bottom: 10px;

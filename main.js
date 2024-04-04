@@ -28,3 +28,29 @@ document.addEventListener('DOMContentLoaded', function() {
         phoneInput.value = '';
     });
 });
+
+// Código JavaScript para adicionar contatos à tabela e botão de exclusão
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    
+    var table = document.getElementById("contacts").getElementsByTagName("tbody")[0];
+    var newRow = table.insertRow(table.rows.length);
+    var cell1 = newRow.insertCell(0);
+    var cell2 = newRow.insertCell(1);
+    cell1.innerHTML = name;
+    cell2.innerHTML = phone + ' <button class="delete-btn" onclick="deleteContact(this)">X</button>';
+    
+    document.getElementById("name").value = "";
+    document.getElementById("phone").value = "";
+});
+
+// Função para excluir um contato
+function deleteContact(button) {
+    var row = button.parentNode.parentNode;
+    row.parentNode.removeChild(row);
+}
+
+
+
