@@ -23,13 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         tableBody.appendChild(newRow);
 
-        // Limpar os campos do formulário após adicionar o contato
         nameInput.value = '';
         phoneInput.value = '';
     });
 });
 
-// Código JavaScript para adicionar contatos à tabela e botão de exclusão
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
     var name = document.getElementById("name").value;
@@ -46,11 +44,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     document.getElementById("phone").value = "";
 });
 
-// Função para excluir um contato
 function deleteContact(button) {
     var row = button.parentNode.parentNode;
     row.parentNode.removeChild(row);
 }
-
-
-
