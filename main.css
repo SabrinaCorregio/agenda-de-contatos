@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-image: url('./midias/Fundo\ mesa\ escritorio.png');
+    background-image: url('./midias/fundo\ mesa\ escritorio.png');
     background-size: cover; /* Isso faz com que a imagem cubra todo o fundo */
 }
 
