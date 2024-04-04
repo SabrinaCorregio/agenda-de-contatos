@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Código JavaScript para adicionar contatos à tabela e botão de exclusão
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
     var name = document.getElementById("name").value;
@@ -48,3 +49,4 @@ function deleteContact(button) {
     var row = button.parentNode.parentNode;
     row.parentNode.removeChild(row);
 }
+
